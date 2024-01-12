@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--neo-color-base-100);
+}
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: var(--neo-color-base-900);
+  }
+}
+
+main .neo-navbar,
+.neo-nav .neo-badge__navbutton button.neo-badge__navbutton--content {
+  background-color: var(--neo-color-base-0);
+}
+@media (prefers-color-scheme: dark) {
+  main .neo-navbar,
+  .neo-nav .neo-badge__navbutton button.neo-badge__navbutton--content {
+    background-color: var(--neo-color-base-1000);
+  }
+}
+
+div.avatar-spacer {
+  margin: auto;
+}
+
+main section.form-container {
+  margin: auto;
+  margin-top: 5rem;
+  max-width: 400px;
+  padding: 1rem;
+  background-color: var(--neo-color-base-0);
+
+  border: 1px solid var(--neo-color-base-150);
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  main section.form-container {
+    background-color: var(--neo-color-base-1000);
+    border-color: var(--neo-color-base-850);
+  }
+}
+
+main section.form-container h4 {
+  margin-bottom: 1rem;
+}
+
+main section.form-container .neo-form-control.neo-form-control--textarea {
+  width: 100%;
+}
+
+main section.form-container .button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main section .neo-input-group .neo-check + label {
+  margin-top: 0.5rem;
+}
